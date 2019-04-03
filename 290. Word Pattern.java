@@ -4,7 +4,6 @@ class Solution {
         if(pattern.length() == 1 && str_split.length == 0) return true;
         if(pattern.isEmpty() || str_split.length == 0 || str_split.length != pattern.length()) return false;
         
-        int pointer = 0;
         HashMap<Character, String> pattern_map = new HashMap<>();
         HashMap<String, Character> str_map = new HashMap<>();
         pattern_map.put(pattern.charAt(0), str_split[0]);

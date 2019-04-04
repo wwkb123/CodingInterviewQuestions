@@ -2,7 +2,6 @@ class Solution {
     public int[] searchRange(int[] nums, int target) {
         
         int[] result = new int[]{-1,-1};
-        List<Integer> targets = new ArrayList<>();
         search(nums, 0, nums.length-1, target, result);
         
         return result;
